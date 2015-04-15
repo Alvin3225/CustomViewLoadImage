@@ -69,7 +69,7 @@ public class MainActivity extends Activity implements CustomViewLoadImage.OnLoad
                 File file = new File(imgDir);
                 if (file.exists()) {
                    //二次采样,参数2 按比例缩放 1/ (sampleSize*sampleSize)
-                    Bitmap bitmap = ImageDownloadHelper.createThumbnail(imgDir,5);
+                    Bitmap bitmap = ImageDownloadHelper.createThumbnail(imgDir,3);
                     if (bitmap != null) {
                         customViewLoadImage.addImage(bitmap);
                     } else {

@@ -63,8 +63,9 @@ public class CustomViewLoadImage extends ScrollView{
         if(bitmap !=null){
             ImageView imageView = new ImageView(getContext());
             imageView.setImageBitmap(bitmap);
+            int height = bitmap.getHeight();
             ViewGroup.LayoutParams lp = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
-                    ViewGroup.LayoutParams.WRAP_CONTENT);
+                    height);
             imageView.setLayoutParams(lp);
             imageView.setScaleType(ImageView.ScaleType.FIT_XY);
             LinearLayout linearLayout = columns.get(imageCount % columnNum);

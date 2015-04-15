@@ -154,7 +154,7 @@ public class ImageDownloadHelper {
 					if (flag) {
 						// Log.i(TAG, "==从网络中找到数据" + bm.toString());
 						// 放入强缓存
-						bm = createThumbnail(imgPath,5);//  放入请引用前二次采样
+						bm = createThumbnail(imgPath,3);//  放入请引用前二次采样
 						lruCache.put(urlString, bm);
 					} else {
 						// removeTaskFromMap(urlString);
